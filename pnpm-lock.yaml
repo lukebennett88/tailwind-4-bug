@@ -36,6 +36,9 @@ importers:
       tailwindcss:
         specifier: 4.0.0-beta.7
         version: 4.0.0-beta.7
+      tailwindcss-react-aria-components:
+        specifier: ^1.2.0
+        version: 1.2.0(tailwindcss@4.0.0-beta.7)
       typescript:
         specifier: ^5
         version: 5.7.2
@@ -494,6 +497,11 @@ packages:
       babel-plugin-macros:
         optional: true
 
+  tailwindcss-react-aria-components@1.2.0:
+    resolution: {integrity: sha512-ynlQIfAdoWAz0Og0dCe/d4QVE+L8Yuo6rtK9apdhehZZMoLC1GdwtnvLZyUyx+wHwnTjRuNtFPdN0DpPsPXJJg==}
+    peerDependencies:
+      tailwindcss: '*'
+
   tailwindcss@4.0.0-beta.7:
     resolution: {integrity: sha512-9JXrCC5UVt2bjV9lrjO+B7MPY+bgpWCf5sPbu+Ih5rGvGE6STwA94N6Ah1xMa0Avzp48fB/S1l0vByTp2HEzAw==}
 
@@ -887,6 +895,10 @@ snapshots:
     dependencies:
       client-only: 0.0.1
       react: 19.0.0
+
+  tailwindcss-react-aria-components@1.2.0(tailwindcss@4.0.0-beta.7):
+    dependencies:
+      tailwindcss: 4.0.0-beta.7
 
   tailwindcss@4.0.0-beta.7: {}
 
